@@ -264,6 +264,11 @@
     border-radius: 12px;
     padding: 16px;
     margin-bottom: 16px;
+    max-width: 420px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
   }
   #modal-image {
     width: 100%;
@@ -273,6 +278,13 @@
     -webkit-touch-callout: default;
     -webkit-user-select: auto;
     user-select: auto;
+  }
+  .modal-size-hint {
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+    font-size: 11px;
+    margin-top: -8px;
+    margin-bottom: 16px;
   }
 
   .modal-btn-row {
@@ -393,6 +405,7 @@
   <div class="modal-image-wrap">
     <img id="modal-image" alt="T1D Sticker">
   </div>
+  <div class="modal-size-hint" data-i18n="sizeHint">Hochauflösend (1200×1500 px) – auf einer Handyhülle ca. 4–5 cm groß und gestochen scharf</div>
 </div>
 
 <script>
@@ -409,6 +422,7 @@
       previewTitle: 'Vorschau',
       saveBtn: 'Als Bild speichern',
       disclaimer: 'Dieser Sticker dient ausschließlich als grafische Hinweis-Vorlage und ersetzt keinen offiziellen medizinischen Notfallausweis. Verwendung auf eigene Verantwortung.',
+      sizeHint: 'Hochauflösend (1200×1500 px) – auf einer Handyhülle ca. 4–5 cm groß und gestochen scharf',
       modalInstructionIOS: '📱 <strong>iPhone:</strong> Halte das Bild gedrückt → „<strong>Foto sichern</strong>"',
       modalInstructionDesktop: '💻 <strong>Mac/PC:</strong> Rechtsklick → „<strong>Bild speichern unter</strong>"',
       modalInstructionAndroid: '📱 <strong>Android:</strong> Halte das Bild gedrückt → „<strong>Bild herunterladen</strong>"',
@@ -426,6 +440,7 @@
       previewTitle: 'Preview',
       saveBtn: 'Save as Image',
       disclaimer: 'This sticker is provided as a graphic template only and does not replace an official medical emergency ID. Use at your own risk.',
+      sizeHint: 'High resolution (1200×1500 px) – on a phone case approx. 4–5 cm and razor sharp',
       modalInstructionIOS: '📱 <strong>iPhone:</strong> Long-press the image → „<strong>Save to Photos</strong>"',
       modalInstructionDesktop: '💻 <strong>Mac/PC:</strong> Right-click → „<strong>Save image as</strong>"',
       modalInstructionAndroid: '📱 <strong>Android:</strong> Long-press the image → „<strong>Download image</strong>"',
